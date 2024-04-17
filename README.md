@@ -93,3 +93,15 @@ For example, consider "set up fallbacks form openai to azure-openai" or "prevent
 Well the altenative is have Python and NodeJS directories. The assumption with which an reader would be discovering
 
 </details>
+
+<details>
+
+<summary> Why is Howto a seperate directory? </summary>
+
+- Some articles exist with numbered subtitles, they set a target and blaze through 5 steps to reach a goal.
+  - This is perfect for containing "HowTo", infact I specifically would like to name it "cookbook" but the github repo itself is called "portkey-cookbook"
+- Some articles have a space to exist, consider this [101](./howtos/101-portkey-gateway-configs.md) for example. They don't have a goal such as "how to implement cache, here are 6 steps", they broaden the existing usage to accomplish more.
+  - I see an opportunity for this category to expand: things such as 101 to use prompt variables in prompt library, several ways to access LLMs without Virtual Keys and only with OpenAI SDK + REST APIs
+  - This is not a good place to put an "HowTo", but not irrelavant too.So OK to place it there.
+
+</details>
