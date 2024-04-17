@@ -1,37 +1,91 @@
-<div align="right">
-  <a href="#">
-  	<img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy-downsized.gif" alt="Logo project" height="80" />
-  </a>
-  <br>
-  <p>
-     <b>Repository of resources to learn how to use Portkey for LLMOps</b>
-     <br>
-  </p>
-</div>
+# Welcome to the Portkey Cookbook
 
-Resources focus on <b>how to use those features and why they matter </b> rather than what they are and how they work. Are you interested in the latter? Visit <a href="https://portkey.ai/docs">portkey documentation</a>.
+This is a collection of guides and examples for using Portkey, including [quickstart](./quickstarts/) to add multimodal AI gateway and Observability capabilities, while [How To&#39;s](./howtos/) teaches you techniques that help you solve LLM challenges in production.
 
----
+## Get started with Portkey
 
-#### Cookbooks
+Portkey API lets you get an [open-source multimodal AI gateway](https://github.com/Portkey-AI/gateway) and incorporate observability for your LLM apps.
 
-- [How to generate images using Portkey AI gateway](./examples/image-generation.ipynb) (_Python_)
-- [Setting up resilient Load balancers with failure-mitigating Fallbacks](./ai-gateway/resilient-loadbalancing-with-failure-mitigating-fallbacks.md) [ [+ See Python Notebook](./ai-gateway/resilient_loadbalancing_with_failure_mitigating_fallbacks.ipynb) ]
-- [How to setup fallback from OpenAI to Azure OpenAI](./ai-gateway/how-to-setup-fallback-from-openai-to-azure-openai.md) [ [ + See Python Notebook](./ai-gateway/how_to_setup_fallback_from_openai_to_azure_openai.ipynb) ]
-- [Automatically retry requests to LLMs](./ai-gateway/automatically-retry-requests-to-llms.md)
-- [How to use OpenAI SDK with Portkey Prompt Templates](./ai-gateway/how-to-use-openai-sdk-with-portkey-prompt-templates.md)
-- [Prevent unnecessary LLM requests with the Portkey Cache](./ai-gateway/prevent-unnecessary-llm-requests-with-the-portkey-cache.md)
-- [Set up Fallback from Stable Diffusion to Dall-E](./ai-gateway/set-up-fallback-from-stable-diffusion-to-dall-e.ipynb) (_Python_)
-- [Smart Fallback with Model-Optimized Prompts](./ai-gateway/smart-fallback-with-model-optimized-prompts.md)
+1. Go to [Portkey app](https://portkey.ai/) and Signup/Login.
+2. Get an Portkey API key.
+3. [Make your first request](./quickstarts/first-request.md) using any of:
+   1. Portkey SDK
+   2. OpenAI SDK
+   3. REST API
 
-#### Integration guides
+## Official SDKs
 
-- [Anyscale and Portkey Integration Guide](./integrations/anyscale-portkey.md)
-- [Mistral and Portkey Integration Guide](./integrations/mistral-portkey.md)
-- [Use prompts from LangChainHub, Requests through Portkey](./integrations/how-to-use-prompts-from-langchain-hub-and-requests-through-portkey.md)
-- [Vercel AI and Portkey Integration Guide](./integrations/integrations/vercel-ai-sdk-and-portkey-integration-guide.md)
+- [Python]
+- [Node.js]
 
-#### Want to explore more?
+## Get help
 
-- [101 on Portkey Gateway Configs](./product/101-portkey-gateway-configs.md) [ [+ See Python Notebook](./product/101_portkey_gateway_configs.ipynb) ]
-- [Build an article suggestion app with Supabase pgvector, and Portkey](./examples/build-an-article-suggestion-app-with-supabase-pgvector-and-portkey.md)
+Open an [issue](https://github.com/google-gemini/cookbook/issues) on GitHub.
+
+## Contributing
+
+Contributions are welcome. See [contributing](https://github.com/google-gemini/cookbook/blob/main/CONTRIBUTING.md) to learn more.
+
+Thank you for developing with the Gemini API! We’re excited to see what you create.
+
+### FAQ
+
+<details>
+
+<summary>What is the philosophy behind the kebab case?</summary>
+
+If the github repository is threaded like a place for good resources, then it's like a good book that users will use for bookmarking or read through URLs. The `kebab-casing` does not cause any issues for URLs representation, and is very intuitive just like a a piece of blog or tutorial.
+
+</details>
+
+<details>
+
+<summary>Why terms: quickstarts and howtos ? </summary>
+
+The usage of terms like `reliability` or `managing-prompts` come-off as value driven to readers, but they
+
+- limited in the list of articles they hold
+- need to be changed, when product or messaging changes
+
+Another option, the usage of terms like `ai-gateway`, `observability`, `product`:
+
+- These are chosen to adhere to how documentation is structred
+- Documentation overhaul is very rare. Hence usually someone who is comfortable with docs will find this intuitive.
+
+In the current case:
+
+- the terms `quickstarts`, `howto`, `examples` are the part of learning journey.
+- they are not closely-knit with `use-cases`, `product features` or `value` that may change in the future.
+- they are extensible - quickstarts, or howtos maybe increasing or can be further sub-foldered
+
+</details>
+
+<details>
+
+<summary> What is `examples` ? </summary>
+
+The `examples` folder:
+
+- allows makes it open ended to add any topic to it.
+- when have flexibility to wait untile we find patterns, we can create a new category or move to `quickstarts` or `howto` or something new.
+
+</details>
+
+<details>
+
+<summary> What is the philosophy with `README.md` file? </summary>
+
+- When someone discovers a page on a website the messaging of value and what they can do with it takes precedence.
+- When someone discovers github page, makes sure they get what it is in shortest realest possible and take them to sign up or set up. This will have them get involved real quick.
+
+</details>
+
+<details>
+
+<summary> What about index of contents? </summary>
+
+An index of contents can be treated optional, if we expect as fewer and non-frequent changes to the filenames or titles of the existing articles on the repo.
+
+For example, consider "set up fallbacks form openai to azure-openai" or "prevent unncessary llm requests" articles. They go into `howtos` or `quickstarts` or `examples` in terms of folders. But with an index on readme, we can take the flexiblity of introducing a table, list, tags and put them into desired labels such as `end to end apps` or `demo` or `ai-gateway` or `reliablity` - since we can always update the README without impacting the URLs or broken links.
+
+</details>
