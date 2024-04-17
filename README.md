@@ -22,8 +22,6 @@ Join the [LLMs in Prod community](https://www.portkey.ai/community)
 
 Contributions are welcome. See [contributing](./CONTRIBUTING.md) to learn more.
 
-Thank you for developing with the Gemini API! We’re excited to see what you create.
-
 ### FAQ
 
 <details>
