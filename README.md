@@ -20,11 +20,11 @@ Portkey API lets you get an [open-source multimodal AI gateway](https://github.c
 
 ## Get help
 
-Open an [issue](https://github.com/google-gemini/cookbook/issues) on GitHub.
+Join the [LLMs in Prod community](https://www.portkey.ai/community)
 
 ## Contributing
 
-Contributions are welcome. See [contributing](https://github.com/google-gemini/cookbook/blob/main/CONTRIBUTING.md) to learn more.
+Contributions are welcome. See [contributing](./CONTRIBUTING.md) to learn more.
 
 Thank you for developing with the Gemini API! We’re excited to see what you create.
 
@@ -87,5 +87,13 @@ The `examples` folder:
 An index of contents can be treated optional, if we expect as fewer and non-frequent changes to the filenames or titles of the existing articles on the repo.
 
 For example, consider "set up fallbacks form openai to azure-openai" or "prevent unncessary llm requests" articles. They go into `howtos` or `quickstarts` or `examples` in terms of folders. But with an index on readme, we can take the flexiblity of introducing a table, list, tags and put them into desired labels such as `end to end apps` or `demo` or `ai-gateway` or `reliablity` - since we can always update the README without impacting the URLs or broken links.
+
+</details>
+
+<details>
+
+<summary> Why put md and ipynb files in same directories? </summary>
+
+Well the altenative is have Python and NodeJS directories. The assumption with which an reader would be discovering
 
 </details>
