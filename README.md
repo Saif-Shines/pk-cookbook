@@ -8,15 +8,11 @@ Portkey API lets you get an [open-source multimodal AI gateway](https://github.c
 
 1. Go to [Portkey app](https://portkey.ai/) and Signup/Login.
 2. Get an Portkey API key.
-3. [Make your first request](./quickstarts/first-request.md) using any of:
-   1. Portkey SDK
-   2. OpenAI SDK
-   3. REST API
+3. [Make your first request](./quickstarts/first-request.md)
 
 ## Official SDKs
 
-- [Python]
-- [Node.js]
+Get the official [Portkey SDKs](https://portkey.ai/docs/api-reference/portkey-sdk-client#install-the-portkey-sdk) (Python or NodeJS).
 
 ## Get help
 
